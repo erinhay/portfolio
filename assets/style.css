@@ -122,6 +122,10 @@ figcaption {
     justify-content: center;
 }
 
+.flex {
+    display: flex;
+}
+
 /* Text on image rollover feature */
 .container {
     position:relative;
