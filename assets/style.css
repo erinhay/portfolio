@@ -1,0 +1,311 @@
+@import url("https://use.typekit.net/gpa2lru.css");
+
+/* Headings, text */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+h1 {
+    font-family: capitol, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: black !important;
+}
+
+h2 {
+    font-family: capitol, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: -25px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: capitol, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin-left: 60px;
+    margin-bottom:0;
+    margin-top:40px;
+    color: black !important;
+}
+
+h4 {
+    margin-left: 80px;
+    font-family: bebas-neue-pro, sans-serif;
+    font-style: normal;
+    font-weight:100;
+    font-size:16px;
+}
+
+h5 {
+    font-family: capitol, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    margin-left: 60px;
+    margin-bottom:0;
+    margin-top:40px;
+    color: black !important;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+p {
+    font-family: bebas-neue-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size:16px;
+    margin-left: 80px;
+    margin-right:80px;
+    line-height:24px;
+    text-indent: 30px;
+}
+
+figcaption {
+    font-family: bebas-neue-pro, sans-serif;
+    font-style: normal;
+    font-size:16px;
+    font-weight: 100;
+    text-align: right;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+
+/* Placement, alignment */
+.center {
+    text-align:center;
+}
+
+.indent {
+    margin-left: 100px;
+}
+
+.left-al {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.vid-center {
+    margin-left:21vw !important;
+}
+
+.vertical-im {
+    padding-left:200px;
+}
+
+.note {
+    font-size: 12px !important;
+    font-style: italic !important;
+}
+
+.cover-right {
+    margin-right:100px;
+    margin-left: 50px;
+}
+
+/* Text on image rollover feature */
+.container {
+    position:relative;
+    width:50%;
+    left:25%;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+.container:hover .overlay {
+    opacity:1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text {
+    color:black !important;
+    font-family:capitol,sans-serif;
+    font-weight: 700;
+    font-size:48px;
+    font-style: normal;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+video {
+    margin-left:100px;
+}
+
+.smallvid {
+    margin-left:50px !important;
+}
+
+
+/* Sidebar menu */
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height:100%;
+    background: #eb3440;
+    right:-250px;
+    transition: all 500ms ease-in-out;
+    z-index:1;
+}
+
+#sidebar.active {
+    right:0px;
+}
+
+#sidebar ul li {
+    font-family: capitol,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    list-style: none;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    right: 280px;
+    top: 30px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    height: 5px;
+    width: 30px;
+    background: #151719;
+    margin: 3px 0px;
+}
+
+
+/* Contact form */
+form {
+    margin-top:50px;
+    margin-left:110px;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size:16px;
+    margin-bottom:14px;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background:black;
+    border-color:transparent;
+    font-family:capitol, sans-serif;
+    font-weight:700;
+    font-style: normal;
+    font-size: 30px;
+    height:50px;
+    margin-top:20px;
+    color:white;
+    transition: background 0.5s;
+}
+
+form .submit:hover {
+    background:#eb3440;
+    color:white;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+
+/* Youtube videos */
+iframe {
+    margin-left: 100px;
+}
+
+
+/* Slideshow */
+.mySlides1 {display: none}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  opacity:0.8;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Travel Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
