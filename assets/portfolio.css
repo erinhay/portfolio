@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Stravinsky-Regular";
+    src: url("./fonts/TRIAL_Stravinsky-Regular.otf");
+}
+
+@font-face {
+    font-family: "Stravinsky-Bold";
+    src: url("./fonts/TRIAL_Stravinsky-Bold.otf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+/* Headings, text */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+h1 {
+    font-family: "Stravinsky-Regular", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    color: black !important;
+    padding:20px;
+}
+
+h3 {
+    font-family: "Stravinsky-Regular", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    margin-left: 60px;
+    margin-bottom: 0;
+    color: black;
+}
+
+h4 {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 24px;
+    margin-left: 60px;
+    margin-bottom:0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: alias;
+}
+
+p {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    margin-left: 80px;
+    margin-right:80px;
+    line-height: 24px;
+    text-indent: 30px;
+}
+
+figcaption {
+    font-family: "Roboto-Regular", sans-serif;
+    font-style: normal;
+    font-size:16px;
+    font-weight: 100;
+    text-align: right;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+video {
+    width: 560px;
+}
+
+/* Sticky Header*/
+.header {
+    position: sticky;
+    top:0;
+    left:0;
+    width:42vw;
+    text-align: center;
+}
+
+.sections {
+    margin-top: -135px;
+}
+
+.flex {
+    display: flex;
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+}
+
+.poster {
+    border: lightgray solid 0.5px;
+}
+
+.posters {
+    padding-left:50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Text on image rollover feature */
+.container {
+    position:relative;
+    width:50%;
+    left:45%;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+.container:hover .overlay {
+    opacity:1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text {
+    color:black !important;
+    font-family: "Stravinsky-Regular",sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    font-style: normal;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Slideshow */
+.mySlides1 {display: none}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 40vw;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer !important;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  opacity:0.8;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
