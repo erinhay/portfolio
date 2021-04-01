@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Stravinsky-Regular";
+    src: url("./fonts/TRIAL_Stravinsky-Regular.otf");
+}
+
+@font-face {
+    font-family: "Stravinsky-Bold";
+    src: url("./fonts/TRIAL_Stravinsky-Bold.otf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+/* Headings, text */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+*::selection {
+    background-color: #129D41;
+}
+
+h1 {
+    font-family: Arial;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    color: black !important;
+    padding:20px;
+}
+
+h2 {
+    font-family: Arial;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: black !important;
+    padding:20px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+    font-size: 48px;
+    color: black !important;
+    padding:20px;
+}
+
+audio {
+    padding-left:20px;
+}
+
+span {
+    background-color: #129D41;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    margin:20px;
+}
+
+.lyrics {
+    width: 40vw;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#paint {
+    width: 48vw;
+}
+
+#hair {
+    width: 28vw;
+}
+
+.pizza {
+    width: 28vw;
+}
+
+#dog {
+    width: 28vw;
+}
+
+#sunscreen {
+    width: 30vw;
+}
+
+.cheers {
+    border: lightgray solid 1px;
+}
+
+.timer {
+    width: 40vw;
+    padding: 20px;
+}
+
+#toes {
+    width: 60vw;
+}
+
+#rach {
+    width: 30vw;
+}
+
+#couch {
+    width: 55vw;
+}
+
+#ad {
+    width: 48vw;
+}
+
+#ad2 {
+    width: 48vw;
+}
+
+#igt {
+    width: 48vw;
+}
+
+#helene {
+    width: 50vw;
+}
